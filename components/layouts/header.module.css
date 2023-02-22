@@ -1,0 +1,23 @@
+.header{
+    background-color: black;
+    color: #fff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__links{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 300px;
+}
+.header__links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__links div:hover{
+    cursor: pointer;
+    color:aquamarine;
+}
