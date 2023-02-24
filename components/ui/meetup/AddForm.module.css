@@ -1,0 +1,28 @@
+.addForm__container{
+    box-shadow: 0 6px 6px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 50px 100px;
+    width: 600px;
+    
+}
+.addForm__container button{
+    margin-top: 40px;
+    padding: 6px 0;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.addForm__container button:hover{
+    cursor: pointer;
+}
+
+.addForm__input{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

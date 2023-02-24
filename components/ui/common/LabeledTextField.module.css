@@ -1,0 +1,13 @@
+.labeledTextField{
+    display: flex;
+    flex-direction: column;
+}
+.labeledTextField label{
+    margin-bottom: 3px;
+    font-size: 0.9em;
+}
+.labeledTextField input{
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: 1px solid gray
+}

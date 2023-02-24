@@ -6,7 +6,7 @@ const Header = () =>{
     const router = useRouter();
 
     return(<header className={classes.header}>
-        <h1>MeetApp</h1>
+        <h1>Logo</h1>
         <div className={classes.header__links}>
             <Link href='/'>Home</Link>
             <Link href='/new-meetup'>New Meetup</Link>

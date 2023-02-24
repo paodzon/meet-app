@@ -1,0 +1,10 @@
+.home__container{
+    padding: 50px 80px ;
+}
+
+.home__cards{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+}
