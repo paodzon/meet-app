@@ -2,18 +2,19 @@ import { useRef } from 'react';
 import LabeledTextField from '../common/LabeledTextField';
 import classes from './AddForm.module.css';
 
-const AddForm = () => {
+const AddForm = ({onSubmitHandler}) => {
     const titleInputRef = useRef();
     const addressInputRef = useRef();
     const imageInputRef = useRef();
 
-    const onSubmit = (e) => {
+    const onSubmitMeetUp = (e) => {
         e.preventDefault();
-        console.log({ title: titleInputRef.current.value, address: addressInputRef.current.value, image: imageInputRef.current.value });
+        const newMeetup = { title: titleInputRef.current.value, address: addressInputRef.current.value, image: imageInputRef.current.value };
+        onSubmitHandler(newMeetup);
     }
 
     return (
-        <form className={classes.addForm__container} onSubmit={onSubmit}>
+        <form className={classes.addForm__container} onSubmit={(e) => onSubmitMeetUp(e)}>
             <h2 style={{textAlign:'center'}}>Add New Meetup</h2>
             <div className={classes.addForm__input}>
                 <LabeledTextField label='Title' inputRef={titleInputRef} required={true}/>

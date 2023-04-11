@@ -28,7 +28,6 @@
     border: none;
     border-radius: 4px;
 }
-
 .card__details button:hover{
     cursor: pointer;
 }

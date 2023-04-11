@@ -1,9 +1,7 @@
 import classes from 'components/layouts/header.module.css';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const Header = () =>{
-    const router = useRouter();
 
     return(<header className={classes.header}>
         <h1>Logo</h1>
